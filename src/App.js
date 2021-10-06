@@ -14,11 +14,7 @@ export default class App extends Component {
     };
   }
 
-  changeStateData = () => {
-    this.setState({
-      userName: this.state.userName === "Emori" ? "Godfrey" : "Emori",
-    });
-  };
+  
 
   render() {
     return (
@@ -28,12 +24,7 @@ export default class App extends Component {
             <h2 className="flex-grow-0  bg-blue-800 text-white text-2xl">
               {this.state.userName} Todo List
             </h2>
-            <button
-              className="text-red-900 border-2 p-2 rounded bg-gray-200"
-              onClick={this.changeStateData}
-            >
-              Change
-            </button>
+            
           </div>
         </div>
       </div>
