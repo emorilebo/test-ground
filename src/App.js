@@ -23,7 +23,9 @@ export default class App extends Component {
         ...this.state.todoItems,
         { action: this.state.newTodo, done: false },
       ],
+      
     });
+    
   };
 
   todoRows = () =>
